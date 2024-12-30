@@ -7,7 +7,7 @@ import (
     "os"
     "strconv"
     "github.com/hekmon/tavily"
-    "anthropicfunc/logging"
+    "github.com/logging"
 )
 
 const defaultAPIKey = "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"

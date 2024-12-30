@@ -7,8 +7,8 @@ import (
     "sync"
     "time"
     "golang.org/x/sync/errgroup"
-    "anthropicfunc/logging"
-    "anthropicfunc/util"
+    "github.com/rdhillbb/logging"
+    "github.com/rdhillbb/util"
 )
 
 type SearchResult struct {
