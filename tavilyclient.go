@@ -7,7 +7,7 @@ import (
     "os"
     "strconv"
     "github.com/hekmon/tavily"
-    "github.com/logging"
+    "github.com/rdhillbb/logging"
 )
 
 const defaultAPIKey = "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"
