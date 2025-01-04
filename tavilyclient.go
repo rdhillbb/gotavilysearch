@@ -10,13 +10,15 @@ import (
     "github.com/rdhillbb/logging"
 )
 
-const defaultAPIKey = "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"
 
 func getAPIKey() string {
     if apiKey := os.Getenv("TAVILY_API_KEY"); apiKey != "" {
         return apiKey
     }
-    return defaultAPIKey
+    fmt.Fprintf(os.Stderr, "Error: TAVILY_API_KEY environment variable is not set\n")
+    os.Exit(1)
+    return "" 
+
 }
 
 func getMaxResults(envVar string) int {
