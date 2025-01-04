@@ -55,7 +55,7 @@ func DeepSearch(searchQuery string) (string, error) {
         return "", fmt.Errorf("no results found")
     }
     
-    fmt.Println(combinedResults)
+    //fmt.Println(combinedResults)
     return combinedResults, nil
 }
 
